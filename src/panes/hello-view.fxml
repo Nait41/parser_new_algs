@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="668.0" style="-fx-background-color: b8faff; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <AnchorPane prefHeight="81.0" prefWidth="655.0" style="-fx-background-color: #00c7c7; -fx-background-radius: 20;">
+            <children>
+                <Text fx:id="modeText" fill="WHITE" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parser Algorithms" wrappingWidth="289.13671875">
+                    <font>
+                        <Font name="Impact" size="39.0" />
+                    </font>
+                </Text>
+                  <Button fx:id="dirUnloadButton" layoutX="552.0" layoutY="16.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                      <font>
+                          <Font name="Impact" size="14.0" />
+                      </font>
+                      <effect>
+                          <DropShadow />
+                      </effect>
+                  </Button>
+                <Button fx:id="dirLoadButton" layoutX="495.0" layoutY="16.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            <Button fx:id="closeButton" layoutX="608.0" layoutY="16.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #FF6347;" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <AnchorPane layoutY="57.0" prefHeight="24.0" prefWidth="668.0" style="-fx-background-color: #00c7c7;" />
+            </children>
+        </AnchorPane>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+        <Button fx:id="startButton" layoutX="280.0" layoutY="277.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: #00c7c7;" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Text fx:id="loadStatus_end" fill="WHITE" layoutX="104.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="460.13671875">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+        <Text fx:id="loadStatusFileNumber" fill="WHITE" layoutX="178.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="357.13671875">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+      <ButtonBar layoutX="458.0" layoutY="111.0" prefHeight="40.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
